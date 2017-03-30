@@ -7,6 +7,8 @@ todo:
 - implement BDD
 - implement 2e2
 - optimize images
+- implement fabric UI
+- implement office.js
 
 
 

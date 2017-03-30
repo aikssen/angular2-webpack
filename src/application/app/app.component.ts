@@ -7,4 +7,10 @@ import '../../styles/styles.scss';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent { }
+export class AppComponent {
+  title: string = 'Excel NG2';
+
+  constructor() {}
+
+  ngOnInit() {}
+}

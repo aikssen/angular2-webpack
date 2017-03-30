@@ -1,5 +1,10 @@
-<main>
-  <h1>Hello from Angular App with Webpack</h1>
-
-  <img src="../../images/angular.png">
-</main>
+<div id="container" class="ms-font-m">
+  <div class="ms-Grid">
+    <div class="ms-Grid-row ms-fontColor-white">
+      <div class="ms-Grid-col ms-u-sm12 ">
+        <command-bar [title]="title"></command-bar>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>
