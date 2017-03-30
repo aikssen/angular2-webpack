@@ -27,13 +27,13 @@ module.exports = {
         loader: 'null-loader'
       },
       { // handle and ignore those files
-        test: /\.css$/,
-        exclude: helpers.root('src', 'app'),
+        test: /\.scss$/, 
+        exclude: helpers.root('src', 'application'),
         loader: 'null-loader'
       },
       {
-        test: /\.css$/,
-        include: helpers.root('src', 'app'),
+        test: /\.scss$/, 
+        include: helpers.root('src', 'application'),
         loader: 'raw-loader'
       }
     ]

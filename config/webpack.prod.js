@@ -10,7 +10,7 @@ module.exports = webpackMerge(commonConfig, {
   output: {
     path: helpers.root('dist'),
     publicPath: '/',
-    filename: 'js/[name].[hash].js',
+    filename: 'js/[name].[hash].min.js',
     chunkFilename: 'js/[id].[hash].chunk.js'
   },
   plugins: [
@@ -18,7 +18,9 @@ module.exports = webpackMerge(commonConfig, {
     new webpack.NoEmitOnErrorsPlugin(),
     // uglify and minification (.min)
     new webpack.optimize.UglifyJsPlugin({
-      mangle: { keep_fnames: true } // https://github.com/angular/angular/issues/10618
+      mangle: { keep_fnames: true }, // https://github.com/angular/angular/issues/10618
+      compress: { warnings: false },
+      comments: false
     }),
     // extracts embedded css as external file
     new ExtractTextPlugin('css/[name].[hash].css'),

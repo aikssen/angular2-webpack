@@ -38,18 +38,20 @@ module.exports = {
         test: /\.(woff|woff2|ttf|eot)$/,
         loader: 'file-loader?name=fonts/[name].[hash].[ext]'
       },
-      { // application-wide styles (/styles)
-        test: /\.css$/,
+      { // global styles
+        test: /\.scss$/, 
+        // include: helpers.root('src', 'styles'),
         exclude: helpers.root('src', 'application'),
         loader: ExtractTextPlugin.extract({
           fallbackLoader: 'style-loader',
-          loader: 'css-loader?sourceMap'
-        })
+          loader: ['css-loader', 'sass-loader'],
+        }),
       },
       { // handles component-scoped styles (styleUrls)
-        test: /\.css$/,
+        test: /\.scss$/,
         include: helpers.root('src', 'app'),
-        loader: 'raw-loader'
+        exclude: /node_modules/,
+        loaders: ['raw-loader', 'sass-loader'] // sass-loader not scss-loader
       }
     ]
   },
