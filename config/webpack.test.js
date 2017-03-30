@@ -3,11 +3,9 @@ const helpers = require('./helpers');
 
 module.exports = {
   devtool: 'inline-source-map',
-
   resolve: {
     extensions: ['.ts', '.js']
   },
-
   module: {
     rules: [
       {
@@ -24,11 +22,11 @@ module.exports = {
         test: /\.html$/,
         loader: 'html-loader'
       },
-      {
+      { // handle and ignore those files
         test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
         loader: 'null-loader'
       },
-      {
+      { // handle and ignore those files
         test: /\.css$/,
         exclude: helpers.root('src', 'app'),
         loader: 'null-loader'
@@ -40,7 +38,6 @@ module.exports = {
       }
     ]
   },
-
   plugins: [
     // Workaround for angular/angular#11580
     // The (\\|\/) piece accounts for path separators in *nix and Windows
@@ -50,4 +47,3 @@ module.exports = {
     )
   ]
 }
-

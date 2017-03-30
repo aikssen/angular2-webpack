@@ -5,20 +5,19 @@ const helpers = require('./helpers');
 
 module.exports = webpackMerge(commonConfig, {
   devtool: 'cheap-module-eval-source-map',
-  
   output: {
     path: helpers.root('dist'),
     publicPath: 'http://localhost:8080/',
     filename: '[name].js',
     chunkFilename: '[id].chunk.js'
   },
-  
   plugins: [
+    // extracts embebed css from js files into external files
     new ExtractTextPlugin('[name].css')
   ],
-  
-  devServer: {
+  devServer: { // http dev server, keeps all bundles in memory
     historyApiFallback: true,
-    stats: 'minimal'
+    stats: 'minimal',
+    // hot: true
   }
 });
