@@ -3,8 +3,13 @@
     <div class="ms-Grid-row ms-fontColor-white">
       <div class="ms-Grid-col ms-u-sm12 ">
         <command-bar [title]="title"></command-bar>
+        Title
       </div>
     </div>
   </div>
+  <nav>
+    <a [routerLink]="['/home']">Home</a>
+    <a [routerLink]="['/other']">Other</a>
+  </nav>
   <router-outlet></router-outlet>
 </div>

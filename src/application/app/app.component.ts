@@ -9,8 +9,4 @@ import '../../styles/styles.scss';
 })
 export class AppComponent {
   title: string = 'Excel NG2';
-
-  constructor() {}
-
-  ngOnInit() {}
 }

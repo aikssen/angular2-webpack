@@ -1,23 +1,31 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
+import { FormsModule }  from '@angular/forms';
+import { HttpModule }  from '@angular/http';
 
-import appRoutes from '../routes/routes';
+import { routing } from './app.routing'; 
 
 import { AppComponent } from './app.component';
-import { OfficeUiModule } from '../components/office-ui/office-ui.module';
+
+import { HomeModule } from '../modules/home/home.module';
+import { OtherModule } from '../modules/other/other.module';
+import { OfficeUiModule } from '../modules/office-ui/office-ui.module';
 
 @NgModule({
-  imports: [
+  imports: [ // angular and custom module imports
     BrowserModule,
-    RouterModule.forRoot(appRoutes),
-    OfficeUiModule
+    FormsModule,
+    HttpModule,
+    routing, // app routes
+    OfficeUiModule,
+    HomeModule,
+    OtherModule
   ],
-  declarations: [ 
-    AppComponent 
+  declarations: [ // custom components imports
+    AppComponent
   ],
-  bootstrap: [ 
-    AppComponent 
+  bootstrap: [ // app init/bootstraping
+    AppComponent
   ]
 })
 export class AppModule { }
