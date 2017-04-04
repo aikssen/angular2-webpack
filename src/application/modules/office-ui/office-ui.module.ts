@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
 
-import { BackButtonComponent } from './back-button.component';
-import { CommanBarComponent } from './command-bar.component';
+import { BackButtonComponent } from './back-button/back-button.component';
+import { CommanBarComponent } from './command-bar/command-bar.component';
 
 @NgModule({
   imports: [

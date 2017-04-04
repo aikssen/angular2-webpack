@@ -1,15 +1,27 @@
-<div id="container" class="ms-font-m">
-  <div class="ms-Grid">
-    <div class="ms-Grid-row ms-fontColor-white">
-      <div class="ms-Grid-col ms-u-sm12 ">
-        <command-bar [title]="title"></command-bar>
-        Title
-      </div>
-    </div>
-  </div>
+<!--<div class="">
   <nav>
-    <a [routerLink]="['/home']">Home</a>
-    <a [routerLink]="['/other']">Other</a>
+    <command-bar [title]="title"></command-bar>
   </nav>
+  <div class="container-main ms-fontColor-themePrimary">
+    <router-outlet></router-outlet>
+  </div>
+  <footer class="ms-landing-page__footer  ms-bgColor-themePrimary">
+    <div class="ms-landing-page__footer--left">
+      <img src="/assets/logo-filled.png" />
+      <h1 class="ms-font-xl ms-fontWeight-semilight ms-fontColor-white">My Add-in Name</h1>
+    </div>
+    <div class="ms-landing-page__footer--right">
+      <i class="ms-Icon enlarge ms-Icon--gear ms-fontColor-white"></i>
+    </div>
+  </footer>
+</div>-->
+<main class="ms-firstrun-instructionstep">
+  <section class="ms-firstrun-instructionstep__header">
+    <div class="ms-fontSize-xl ms-fontColor-themePrimary ">WELCOME</div>
+    <div class="ms-font-m ms-fontColor-themePrimary ms-fontWeight-light">
+      This add-in demonstrates how to connect to Microsoft Graph from an add-in.
+    </div>
+    <div class="ms-firstrun-instructionstep__header--image"></div>
+  </section>
   <router-outlet></router-outlet>
-</div>
+</main>
