@@ -1,0 +1,17 @@
+.space {
+  width: 100%;
+  display: block;
+  &-10 {
+    height: 10px;
+  }
+  &-20 {
+    height: 20px;
+  }
+}
+
+
+.clearfix {
+  display: block;
+  clear: both;
+  height: 0; 
+}

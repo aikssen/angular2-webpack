@@ -45,13 +45,20 @@ module.exports = {
         loader: ExtractTextPlugin.extract({
           fallbackLoader: 'style-loader',
           loader: ['css-loader', 'sass-loader'],
-        }),
+        })
       },
       { // handles component-scoped styles (styleUrls)
         test: /\.scss$/,
         include: helpers.root('src', 'app'),
         exclude: /node_modules/,
-        loaders: ['raw-loader', 'sass-loader'] // sass-loader not scss-loader
+        // exclude: [/node_modules/, /src\/styles/], 
+        loaders:[
+          'to-string-loader', // hanlde images inside .sass files
+          ExtractTextPlugin.extract({
+            fallbackLoader: 'style-loader',
+            loader: ['css-loader', 'sass-loader'],
+          })
+        ]
       }
     ]
   },

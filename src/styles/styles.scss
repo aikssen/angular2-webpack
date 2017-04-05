@@ -1,13 +1,13 @@
+// reseter for browsers
 @import '../../bower_components/reset-css/reset.css';
+// Office UI fabric styles
 @import '../../bower_components/office-ui-fabric-js/dist/css/fabric.min.css';
 @import '../../bower_components/office-ui-fabric-js/dist/css/fabric.components.min.css';
 
-@import '_welcome'
+// overrides
+@import '_fabric_overrides';
 
-// body {
-//   font-family: 'Segoe UI WestEuropean','Segoe UI','Roboto','Helvetica Neue','sans-serif';
-// }
-
-// .container-main {
-//   padding: 20px;
-// }
+// internal imports
+@import '_variables';
+@import '_utilities';
+@import '_general';
