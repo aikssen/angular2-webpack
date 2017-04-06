@@ -10,7 +10,6 @@ npm-debug.log
 # Fabric files
 *.sublime-workspace
 docs.css
-temp
 
 # Docs files
 docs/app

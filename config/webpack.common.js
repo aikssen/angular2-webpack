@@ -49,8 +49,8 @@ module.exports = {
       },
       { // handles component-scoped styles (styleUrls)
         test: /\.scss$/,
-        include: helpers.root('src', 'app'),
-        exclude: /node_modules/,
+        include: helpers.root('src', 'application'),
+        // exclude: /node_modules/,
         // exclude: [/node_modules/, /src\/styles/], 
         loaders:[
           'to-string-loader', // hanlde images inside .sass files

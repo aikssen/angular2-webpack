@@ -14,6 +14,6 @@
   "dependencies": {
     "reset-css": "^2.2.0",
     "office-ui-fabric-js": "^1.4.0",
-    "office-ui-fabric-core": "^6.0.1"
+    "office-ui-fabric-core": "^2.6.1"
   }
 }

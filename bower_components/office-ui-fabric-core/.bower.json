@@ -1,14 +1,18 @@
 {
-  "name": "office-ui-fabric-core",
+  "name": "office-ui-fabric",
   "author": "Office UI Fabric Team",
-  "version": "6.0.1",
+  "version": "2.6.3",
   "description": "The front-end framework for building experiences for Office 365.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OfficeDev/Office-UI-Fabric-Core"
+    "url": "https://github.com/OfficeDev/Office-UI-Fabric"
   },
-  "main": "dist/css/fabric.css",
+  "main": [
+    "dist/css/fabric.css",
+    "dist/css/fabric.components.css",
+    "dist/js/jquery.fabric.js"
+  ],
   "private": false,
   "ignore": [
     "node_modules",
@@ -20,20 +24,18 @@
     "gulp",
     ".travis.yml",
     ".sass-lint.yml",
-    ".pullapprove.yml",
     ".htmllintrc",
     ".jshintrc",
     ".csscomb.json"
   ],
   "homepage": "https://github.com/OfficeDev/office-ui-fabric-core",
-  "_release": "6.0.1",
+  "_release": "2.6.3",
   "_resolution": {
     "type": "version",
-    "tag": "6.0.1",
-    "commit": "d5538516f89d70ea20c7077c0b398fe42fe7aadf"
+    "tag": "2.6.3",
+    "commit": "ae62715a2aa168e8429b63f3edf16c310da297a1"
   },
   "_source": "https://github.com/OfficeDev/office-ui-fabric-core.git",
-  "_target": "^6.0.1",
-  "_originalSource": "office-ui-fabric-core",
-  "_direct": true
+  "_target": "^2.6.1",
+  "_originalSource": "office-ui-fabric-core"
 }
