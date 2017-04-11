@@ -1,7 +1,7 @@
 <main class="ms-firstrun-instructionstep ms-u-slideDownIn20">  
 
   <section class="ms-firstrun-instructionstep__header">
-    <div class="ms-fontSize-xl ms-fontColor-themePrimary ">WELCOME</div>
+    <div class="ms-fontSize-xl ms-fontColor-themePrimary">WELCOME</div>
     <div class="ms-font-m ms-fontColor-themePrimary">
       to the PDR Global Planning.
     </div>
@@ -53,9 +53,9 @@
 
   <div class="container">
     <p align="center">
-      <a [routerLink]="['/home']" class="ms-Button ms-Button--primary ms-Button--large">
+      <span (click)="openDialog()" class="ms-Button ms-Button--primary ms-Button--large">
         <span class="ms-Button-label">Start Planning!</span>
-      </a>
+      </span>
     </p>
     <div class="space-10"></div>
     <p align="center">
