@@ -17,6 +17,7 @@
   "exclude": [
     "node_modules/*",
     "bower_components/*",
-    "**/*-aot.ts"
+    "**/*-aot.ts",
+    "**/*.spec.ts"
   ]
 }

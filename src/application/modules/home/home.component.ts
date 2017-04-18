@@ -8,10 +8,11 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   openDialog() {
     // Office.context.ui.displayDialogAsync('https://localhost:8080/#/signin', { 
+    // Office.context.ui.displayDialogAsync(`${window.location.origin}/#/signin`, { 
     Office.context.ui.displayDialogAsync('https://www.google.com', { 
       height: 60, 
       width: 50, 
-      displayInIframe: true
+      // displayInIframe: true
     }); 
   }
 }

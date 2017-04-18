@@ -10,7 +10,7 @@ if (process.env.ENV === 'production') {
 
 platformBrowserDynamic().bootstrapModule(AppModule);
 
-//bootstrap with Office.js for in Office
+// bootstrap with Office.js for in Office
 Office.initialize = () => {
   console.log("Office init: bootstrapping Angular2");
   platformBrowserDynamic().bootstrapModule(AppModule);
